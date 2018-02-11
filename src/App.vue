@@ -1,28 +1,29 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
-  </div>
+ <div id="app">
+  <h1>Online Translation</h1>
+  <h5>Simple / Easy to Use / Convenient</h5>
+  <translateForm></translateForm>
+  <translateOutput></translateOutput>
+ </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
+import TranslateForm from './components/TranslateForm'
+import TranslateOutput from './components/TranslateOutput'
 export default {
   name: 'App',
+  data: function () {
+    return {
+    }
+  },
   components: {
-    HelloWorld
+    TranslateForm,
+    TranslateOutput
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
