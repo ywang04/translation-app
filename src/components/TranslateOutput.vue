@@ -1,6 +1,6 @@
 <template>
  <div id="translateOutput">
-  <p>{{translatedText}}</p>
+  <h2>{{translatedText}}</h2>
 
  </div>
 </template>
