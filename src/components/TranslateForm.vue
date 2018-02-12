@@ -30,6 +30,9 @@ export default {
       this.$emit('formSubmit', this.textToTranslate, this.language)
       e.preventDefault()
     }
+  },
+  created: function () {
+    this.language = 'zh'
   }
 }
 </script>
